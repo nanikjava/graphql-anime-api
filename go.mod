@@ -2,21 +2,18 @@ module github.com/weeb-vip/anime-api
 
 go 1.21.0
 
-toolchain go1.21.4
-
 replace github.com/tempmee/go-metrics-lib => ./metrics_lib
 
 require (
 	github.com/99designs/gqlgen v0.17.36
-	github.com/go-sql-driver/mysql v1.7.1
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/golang/mock v1.6.0
-	github.com/jinzhu/configor v1.2.1
+	github.com/jinzhu/configor v1.2.2
 	github.com/spf13/cobra v1.7.0
 	github.com/tempmee/go-metrics-lib v0.0.0-00010101000000-000000000000
 	github.com/vektah/gqlparser/v2 v2.5.8
 	gopkg.in/DataDog/dd-trace-go.v1 v1.56.0
-	gorm.io/driver/mysql v1.5.0
+	gorm.io/driver/postgres v1.4.6
 	gorm.io/gorm v1.25.3
 
 )
@@ -47,6 +44,9 @@ require (
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.3 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
+	github.com/jackc/pgpassfile v1.0.0 // indirect
+	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
+	github.com/jackc/pgx/v5 v5.3.1 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
 	github.com/lib/pq v1.10.2 // indirect
@@ -79,7 +79,6 @@ require (
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/protobuf v1.31.0 // indirect
-	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	inet.af/netaddr v0.0.0-20230525184311-b8eac61e914a // indirect
 )
